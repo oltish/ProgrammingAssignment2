@@ -1,7 +1,6 @@
-## Put comments here that give an overall description of what your
-## functions do
+## matrix that allows caching of "compute inverse" operation
 
-## Write a short comment describing this function
+## create object (a list) that stores getters and setters for matrix itself and its inverse
 
 makeCacheMatrix <- function(x = matrix()) {
     xinv <- NULL
@@ -19,7 +18,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## check if matrix has cached, if not - compute inverse, cache and return it
 
 cacheSolve <- function(x, ...) {
     inv <- x$getinv()
